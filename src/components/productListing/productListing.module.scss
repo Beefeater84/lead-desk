@@ -3,6 +3,11 @@
   font-weight: 600;
   color: var(--black-color);
   border-bottom: 2px solid var(--main-color);
+
+  &:hover,
+  &:focus-within{
+    background-color: transparent !important;
+  }
 }
 
 .amount-header{
