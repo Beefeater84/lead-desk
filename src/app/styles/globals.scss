@@ -10,6 +10,9 @@
   --button-hover: #f8f5f2;
   --button-disabled: #505050;
   --error-color: #FF0000;
+  --table-background: #ebe6e2;
+  --black-color: #000;
+  --hover-color: #dcd6d0;
 }
 
 body {
@@ -72,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 2.5rem;
   font-weight: 500;
 }
@@ -86,6 +89,8 @@ input:invalid {
 }
 
 input{
+  padding-bottom: 3px;
+  padding-top: 3px;
   border-bottom: 1px solid transparent;
 }
 
@@ -97,14 +102,8 @@ input::placeholder {
 input:focus{
   outline: none;
   transition: color 0.2s ease-in-out;
-  border-bottom: 1px solid var(--main-color);
 }
 
 input:focus::placeholder {
   color: transparent;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  margin-right: 0.3rem;
 }

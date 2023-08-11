@@ -152,8 +152,6 @@ export default function Product(props: ProductProps) {
     }
   };
 
-  const disabled = inputNameError || inputAmountError;
-
   let actionButtonName = "Implement";
   switch (true) {
     case onRemoveFn && !isChanged:
@@ -194,7 +192,6 @@ export default function Product(props: ProductProps) {
         max="10000"
       />
       <button
-        disabled={disabled}
         className={styles["action-button"]}
         type="submit"
         onClick={onClickHandler}

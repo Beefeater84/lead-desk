@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { toast } from "react-toastify";
-import Title from "../../shared/ui/titles/Title";
+import styles from "./productListing.module.scss";
+import productStyle from "../product/products.module.scss";
 import NoProductsFound from "../noProductsFound/NoProductsFound";
 import {
   AddProductFunction,
@@ -27,6 +27,7 @@ export default function ProductListing() {
     setProducts(newProducts);
     toast.warning(`Product removed from your list.`);
   };
+
   const onEditHandler: EditProductFunction = (changedProduct: ProductType) => {
     const candidateIndex = products.findIndex(
       (product) => product.id === changedProduct.id,
@@ -39,6 +40,7 @@ export default function ProductListing() {
       `Product ${newProducts[candidateIndex].name} successfully updated!`,
     );
   };
+
   const onAddHandler: AddProductFunction = (product) => {
     const neeProduct: ProductType = {
       id: window.self.crypto.randomUUID(),
@@ -55,30 +57,43 @@ export default function ProductListing() {
     <>
       <section>
         <div className="container">
-          <Title textPosition="center" titleStyle="underlined">
-            Products
-          </Title>
           <div>
             {products?.length === 0 ? (
               <NoProductsFound />
             ) : (
-              products.map((product) => {
-                return (
-                  <Product
-                    key={product?.id}
-                    id={product?.id}
-                    name={product?.name}
-                    amount={product?.amount}
-                    onRemoveFn={onRemoveHandler}
-                    onEditFn={onEditHandler}
-                  />
-                );
-              })
+              <div className={styles.table}>
+                <div
+                  className={[styles.header, productStyle.container].join(" ")}
+                >
+                  <div className={productStyle.name}>Name</div>
+                  <div
+                    className={[
+                      productStyle.amount,
+                      styles["amount-header"],
+                    ].join(" ")}
+                  >
+                    Amount
+                  </div>
+                  <div className={styles.action}>Actions</div>
+                </div>
+                {products.map((product) => {
+                  return (
+                    <Product
+                      key={product?.id}
+                      id={product?.id}
+                      name={product?.name}
+                      amount={product?.amount}
+                      onRemoveFn={onRemoveHandler}
+                      onEditFn={onEditHandler}
+                    />
+                  );
+                })}
+              </div>
             )}
           </div>
         </div>
       </section>
-      <AddNewProduct onAddHandler={onAddHandler} />
+      <AddNewProduct onAddHandler={onAddHandler} />;
     </>
   );
 }

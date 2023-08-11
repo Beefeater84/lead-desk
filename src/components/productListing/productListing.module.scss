@@ -1,0 +1,30 @@
+.header{
+  height: 3rem;
+  font-weight: 600;
+  color: var(--black-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.amount-header{
+  // correction to center element, because of input number controls
+  right: 11px;
+  position: relative;
+}
+
+.table > div:nth-child(2n) {
+  background-color: var(--table-background);
+}
+
+.table > div {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-block: 0.5rem;
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
