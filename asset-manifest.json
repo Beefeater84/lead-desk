@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lead-desk/static/css/main.f054aad7.css",
+    "main.css": "/lead-desk/static/css/main.2d9e7c9b.css",
     "main.js": "/lead-desk/static/js/main.a5410f09.js",
     "static/media/roboto-latin-900italic.woff": "/lead-desk/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/lead-desk/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
@@ -27,11 +27,11 @@
     "static/media/roboto-latin-400.woff2": "/lead-desk/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/lead-desk/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/lead-desk/index.html",
-    "main.f054aad7.css.map": "/lead-desk/static/css/main.f054aad7.css.map",
+    "main.2d9e7c9b.css.map": "/lead-desk/static/css/main.2d9e7c9b.css.map",
     "main.a5410f09.js.map": "/lead-desk/static/js/main.a5410f09.js.map"
   },
   "entrypoints": [
-    "static/css/main.f054aad7.css",
+    "static/css/main.2d9e7c9b.css",
     "static/js/main.a5410f09.js"
   ]
 }
