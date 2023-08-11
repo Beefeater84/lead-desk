@@ -1,13 +1,13 @@
 @import url('typeface-roboto');
 
 * {
-  --background: #f8f5f2;
+  --background: #f6f6f7;
   --main-color: rgb(85, 77, 86);
   --second-color: #766E78;
   //--button-background: #078080;
   --button-background: #888888;
   --button-color: #202223;
-  --button-hover: #f6f6f7;
+  --button-hover: #f8f5f2;
   --button-disabled: #505050;
   --error-color: #FF0000;
 }
@@ -57,17 +57,6 @@ button {
   font-weight: 500;
   font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
-
-
-  &:hover{
-    background-color: var(--button-hover);
-    outline: 1px solid transparent;
-  }
-
-  &:focus {
-    background-color: var(--button-hover);
-    outline: 1px solid var(--button-color);
-  }
 
 
   &:disabled{

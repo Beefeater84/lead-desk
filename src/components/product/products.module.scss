@@ -10,6 +10,16 @@
 .action-button{
   width: 140px;
   margin-left: auto;
+
+  &:hover{
+    background-color: var(--button-hover);
+    outline: 1px solid transparent;
+  }
+
+  &:focus {
+    background-color: var(--button-hover);
+    outline: 1px solid var(--button-color);
+  }
 }
 
 .amount{
