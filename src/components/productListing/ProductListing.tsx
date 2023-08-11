@@ -93,7 +93,7 @@ export default function ProductListing() {
           </div>
         </div>
       </section>
-      <AddNewProduct onAddHandler={onAddHandler} />;
+      <AddNewProduct onAddHandler={onAddHandler} />
     </>
   );
 }
