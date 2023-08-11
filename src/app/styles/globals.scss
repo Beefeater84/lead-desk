@@ -1,0 +1,121 @@
+@import url('typeface-roboto');
+
+* {
+  --background: #f8f5f2;
+  --main-color: rgb(85, 77, 86);
+  --second-color: #766E78;
+  //--button-background: #078080;
+  --button-background: #888888;
+  --button-color: #202223;
+  --button-hover: #f6f6f7;
+  --button-disabled: #505050;
+  --error-color: #FF0000;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  color: var(--main-color);
+  background: var(--background);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-inline: 1rem;
+  margin: 0 auto;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--background);
+  color: var(--button-color);
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #babfc3;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+
+
+  &:hover{
+    background-color: var(--button-hover);
+    outline: 1px solid transparent;
+  }
+
+  &:focus {
+    background-color: var(--button-hover);
+    outline: 1px solid var(--button-color);
+  }
+
+
+  &:disabled{
+    background-color: var(--second-color);
+    cursor: not-allowed;
+  }
+}
+
+h1 {
+  font-size: 2.2rem;
+  word-break: break-word;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+input:out-of-range {
+  outline: 1px solid var(--error-color);
+}
+
+input:invalid {
+  outline: 1px solid var(--error-color);
+}
+
+input{
+  border-bottom: 1px solid transparent;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: var(--second-color);
+}
+
+input:focus{
+  outline: none;
+  transition: color 0.2s ease-in-out;
+  border-bottom: 1px solid var(--main-color);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin-right: 0.3rem;
+}

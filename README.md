@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+# Project Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project
 
-## Available Scripts
+The "MyProductListing" project is an interface for managing a list of products. It's developed using React with TypeScript and includes the following main components:
 
-In the project directory, you can run:
+- **ProductListing**: A component that displays a list of products with the ability to add, edit, and remove items.
+- **Product**: A component to display an individual product with name and quantity fields.
+- **NoProductsFound**: A component that is displayed when the product list is empty.
+- **AddNewProduct**: A component for adding a new product to the list.
 
-### `npm start`
+The core of the Product Listing feature is the **`<ProductListing />`** component. It offers the following key components and functionalities:
+Structure:
+- `useProducts` - fetch product data from the API.
+- Manages the application's state for the list of products.
+- Displays products using the `<Product />` component.
+- `<AddNewProduct />` section to add new products with the component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Product component
+Utilized for product listing and addition of new items.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+use with `onEditFn` and `onRemoveFn` in lisitng 
+```tsx
+   <Product
+        key={product.id}
+        id={product.id}
+        name={product.name}
+        amount={product.amount}
+        onEditFn={handleEdit}
+        onRemoveFn={removeHandle}
+    />
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+use with `onAddFn` to add new items
+```tsx
+   <Product
+        onAddFn={handleAdd}
+    />
+```
 
-### `npm run build`
+use with `onClickFn` if you want need your own click handler
+```tsx
+   <Product
+        onClickFn={onClickFn}
+    />
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Testing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use `npm test` to run tests. We have One page application, so all test are in `App.test.tsx`
+```bash
+  npm test 
+ ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Important
+- `useProducts` is not described, because it's a fake api and it's not important for the task.
+- `ui` is not described, because it's created for whole app should be described in another documentation.
+- In the design, there was no `edit` button, so you can modify the products by clicking on them.
+- 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To install and run the project, follow these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```
+   git clone https://github.com/your-username/my-product-listing.git
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate to the project directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd my-product-listing
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+    npm install
+    ```
+   
+3. Run the project:
+
+   ```bash
+    npm start
+    ```
+   Open your browser and go to http://localhost:3000 to see your application in action.
+   
+## Dependencies
+
+The project relies on the following main dependencies:
+
+- React: A library for building user interfaces.
+- TypeScript: A static type-checking tool for JavaScript.
+- Jest: A testing library for testing code.
+- React Testing Library: A tool for testing React components.

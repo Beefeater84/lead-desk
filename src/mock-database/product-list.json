@@ -1,0 +1,153 @@
+[
+  {
+    "id": "1",
+    "name": "Smartphone",
+    "amount": 10
+  },
+  {
+    "id": "2",
+    "name": "Laptop",
+    "amount": 5
+  },
+  {
+    "id": "3",
+    "name": "Tablet",
+    "amount": 20
+  },
+  {
+    "id": "4",
+    "name": "Smart TV",
+    "amount": 15
+  },
+  {
+    "id": "5",
+    "name": "Camera",
+    "amount": 8
+  },
+  {
+    "id": "6",
+    "name": "Headphones",
+    "amount": 12
+  },
+  {
+    "id": "7",
+    "name": "Gaming Console",
+    "amount": 3
+  },
+  {
+    "id": "8",
+    "name": "Desktop Computer",
+    "amount": 25
+  },
+  {
+    "id": "9",
+    "name": "Wireless Speaker",
+    "amount": 18
+  },
+  {
+    "id": "10",
+    "name": "Smart Watch",
+    "amount": 7
+  },
+  {
+    "id": "11",
+    "name": "Monitor",
+    "amount": 14
+  },
+  {
+    "id": "12",
+    "name": "Printer",
+    "amount": 9
+  },
+  {
+    "id": "13",
+    "name": "Drone",
+    "amount": 22
+  },
+  {
+    "id": "14",
+    "name": "Bluetooth Earbuds",
+    "amount": 30
+  },
+  {
+    "id": "15",
+    "name": "Fitness Tracker",
+    "amount": 17
+  },
+  {
+    "id": "16",
+    "name": "External Hard Drive",
+    "amount": 6
+  },
+  {
+    "id": "17",
+    "name": "Virtual Reality Headset",
+    "amount": 11
+  },
+  {
+    "id": "18",
+    "name": "Projector",
+    "amount": 23
+  },
+  {
+    "id": "19",
+    "name": "Wireless Mouse",
+    "amount": 4
+  },
+  {
+    "id": "20",
+    "name": "Graphics Card",
+    "amount": 13
+  },
+  {
+    "id": "21",
+    "name": "Smart Home Hub",
+    "amount": 28
+  },
+  {
+    "id": "22",
+    "name": "Router",
+    "amount": 16
+  },
+  {
+    "id": "23",
+    "name": "Wireless Keyboard",
+    "amount": 19
+  },
+  {
+    "id": "24",
+    "name": "Camera Drone",
+    "amount": 2
+  },
+  {
+    "id": "25",
+    "name": "Portable Charger",
+    "amount": 21
+  },
+  {
+    "id": "26",
+    "name": "Bluetooth Speaker",
+    "amount": 27
+  },
+  {
+    "id": "27",
+    "name": "Smart Thermostat",
+    "amount": 29
+  },
+  {
+    "id": "28",
+    "name": "Streaming Device",
+    "amount": 1
+  },
+  {
+    "id": "29",
+    "name": "Noise-Canceling Headphones",
+    "amount": 24
+  },
+  {
+    "id": "30",
+    "name": "Robot Vacuum",
+    "amount": 26
+  }
+]
+

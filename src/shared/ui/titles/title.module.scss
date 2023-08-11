@@ -1,0 +1,22 @@
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.title{
+  width: 100%;
+  display: inline-block;
+}
+
+.underlined{
+  border-bottom: 2px solid var(--main-color);
+  margin-bottom: 1rem;
+}
+
